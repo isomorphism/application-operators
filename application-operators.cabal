@@ -1,0 +1,23 @@
+Name:                application-operators
+Version:             0.1
+Synopsis:            A slightly more self-consistent set of operators for function application/composition
+Description:         Various operators for function application and composition, both of the
+                     ordinary everyday variety and lifting application for functors. Gives
+                     alternate names to some standard operators and creates a couple new ones,
+                     with the main goal being better mnemonic value and more consistent fixities
+                     for each family of related operators.
+License:             WTFPL
+License-file:        COPYING
+Author:              C. McCann
+Maintainer:          cam@uptoisomorphism.net
+Copyright:           Copyright (c) 2011 Casey McCann
+Category:            Control
+Build-type:          Simple
+Cabal-version:       >=1.2
+
+Library
+  Exposed-modules: Control.Apply
+                 , Control.Apply.Lifting
+                 , Control.Apply.Pseudosyntactic
+                 , Control.Apply.Confusing
+  Build-depends: base >= 4 && < 5
